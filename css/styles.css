@@ -1,11 +1,20 @@
 h3 {
   font-family: "Trebuchet MS", Helvetica, sans-serif;
-
 }
 
 h2 {
   font-family: "Trebuchet MS", Helvetica, sans-serif;
   font-size: 3em;
   border: 5px solid black;
+}
 
+p {
+  font-family: "Trebuchet MS", “Times New Roman”, Times, serif;
+  font-size: 1.2em;
+  margin: .5em 2em;
+}
+
+.font {
+  font-family: "Trebuchet MS", “Times New Roman”, Times, serif;
+  font-size: 1.2em;
 }
