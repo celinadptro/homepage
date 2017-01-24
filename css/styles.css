@@ -50,3 +50,7 @@ div#navbar ul li {
   float: left;
   margin-right: 2.5em;
 }
+
+a:hover {
+    background-color: purple;
+}
