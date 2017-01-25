@@ -13,6 +13,12 @@ $(function() {
   $("#changecolor").on("mouseout", function() {
     $(this).css("color", "black");
   });
+  $("#hide").click(function() {
+    $("img").hide();
+  });
+  $("#show").click(function() {
+    $("img").show();
+  });
 });
 
 function showpage(page) {
@@ -57,6 +63,8 @@ function showpage(page) {
 <br>
 <center><img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAdyAAAAJDUxZmNkZmU2LTA1YmEtNGUxNS1hNDEzLTE3YTFkMDhhOWFkMA.jpg"></center>
 <br>
+<center><button id="hide"> Hide Picture </button></center>
+<center><button id="show"> Show Picture </button></center>
 <br>
 <div id="page1" style="display:none;">
 <h3> About Me </h3>
