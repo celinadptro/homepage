@@ -2,15 +2,15 @@
 <head>
 <title>Celina DiPietro's Homepage</title>
 
-<link rel="stylesheet" type="text/css" href="styles.css">
+<link rel="stylesheet" type="text/css" href="index3.css">
 <script src="jquery-3.1.1.min.js"></script>
 <script>
 $(function() {
   console.log("jQuery was loaded");
-  $("#button").mouseover(function() {
+  $("#changecolor").mouseover(function() {
     $("h2").css("color", "purple")
   });
-  $("#button").on("mouseout", function() {
+  $("#changecolor").on("mouseout", function() {
     $(this).css("color", "black");
   });
 });
@@ -19,6 +19,7 @@ function showpage(page) {
   $("#page1").css("display", "none");
   $("#page2").css("display", "none");
   $("#page3").css("display", "none");
+  $("#page4").css("display", "none");
   if (page === 1) {
     $("#page1").css("display", "block");
   }
@@ -28,30 +29,35 @@ function showpage(page) {
   else if (page === 3) {
     $("#page3").css("display", "block");
   }
+  else if (page === 4) {
+    $("#page4").css("display","block");
+  }
 }
 </script>
 </head>
 <body style="background-color: lightgray">
 
 <h4> *Work in progress for my CMPS 262 class* </h4>
+
+<center><h2 id="changecolor"> Celina DiPietro's Homepage </h2></center>
+
 <div id="navbar">
 <ul>
-  <li><a href="javascript:void(0)" onclick="showpage(1)">Home</a></li>
+  <li><a href="javascript:void(0)" onclick="showpage(1)">About Me</a></li>
   <li><a href="javascript:void(0)" onclick="showpage(2)">Courses</a></li>
   <li><a href="javascript:void(0)" onclick="showpage(3)">References</a></li>
+  <li><a href="javascript:void(0)" onclick="showpage(4)">Contact</a></li>
 </ul>
 </div>
 <br>
-<center><h2 id="button"> Celina DiPietro's Homepage </h2></center>
-
+<br>
+<br>
+<br>
+<br>
+<br>
 <center><img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAdyAAAAJDUxZmNkZmU2LTA1YmEtNGUxNS1hNDEzLTE3YTFkMDhhOWFkMA.jpg"></center>
-
-<p> Welcome to my homepage. Click on the buttons to find out more information about myself
-  and my professional skills! </p>
 <br>
 <br>
-<br>
-
 <div id="page1" style="display:none;">
 <h3> About Me </h3>
 
@@ -66,10 +72,6 @@ minoring in Business Management.
  <li>Analytics</li>
  <li>Web Development</li>
 </ul>
-</div>
-
-<div class="font">
-I can be contacted at cmdipie@pointpark.edu or cmdipie@gmail.com
 </div>
 </div>
 
@@ -108,8 +110,13 @@ and Databases.
     <td>412-456-7890</td>
     <td>janesmith@email.com</td>
   </tr>
-
 </table>
 </div>
+
+<div id="page4" style="display:none;" class="font">
+  <h3> Contact Information </h3>
+I can be contacted at cmdipie@gmail.com
+</div>
+
 </body>
 </html>
