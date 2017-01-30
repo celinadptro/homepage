@@ -32,6 +32,12 @@ p {
   font-size: 1.2em;
 }
 
+.main {
+  font-family: "Trebuchet MS", “Times New Roman”, Times, serif;
+  font-size: 1.2em;
+  color: #00994d;
+}
+
 div#navbar {
   width: 100%;
 }
@@ -68,4 +74,8 @@ img {
     filter: drop-shadow(8px 8px 10px #FFB563);
     margin-right: 3em;
     margin-left: 3em;
+}
+
+button {
+  float: right;
 }
