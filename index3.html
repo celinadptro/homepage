@@ -2,16 +2,16 @@
 <head>
 <title>Celina DiPietro's Homepage</title>
 
-<link rel="stylesheet" type="text/css" href="index3.css">
+<link rel="stylesheet" type="text/css" href="3.css">
 <script src="jquery-3.1.1.min.js"></script>
 <script>
 $(function() {
   console.log("jQuery was loaded");
   $("#changecolor").mouseover(function() {
-    $("h2").css("color", "purple")
+    $("h2").css("color", "#FFB563")
   });
   $("#changecolor").on("mouseout", function() {
-    $(this).css("color", "black");
+    $(this).css("color", "#5f9ea0");
   });
   $("#hide").click(function() {
     $("img").hide();
@@ -41,18 +41,11 @@ function showpage(page) {
 }
 </script>
 </head>
-<body style="background-color: lightgray">
+<body style="background-color: #ECECEA">
 
 <h4> *Work in progress for my CMPS 262 class* </h4>
 
-<center><h2 id="changecolor"> Celina DiPietro's Homepage </h2></center>
-<br>
-
-<p>Here you will find some information about my professional skills, interests, and about
-what I did in my college career. Click on any of the buttons below to explore.
-</p>
-<br>
-
+<center><h2 id="changecolor" style="color:#5f9ea0"> Celina DiPietro's Homepage </h2></center>
 <div id="navbar">
 <ul>
   <li><a href="javascript:void(0)" onclick="showpage(1)">About Me</a></li>
@@ -66,17 +59,13 @@ what I did in my college career. Click on any of the buttons below to explore.
 <br>
 <br>
 <br>
-<br>
-<center><img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAdyAAAAJDUxZmNkZmU2LTA1YmEtNGUxNS1hNDEzLTE3YTFkMDhhOWFkMA.jpg"></center>
-<br>
-<center><button id="hide"> Hide Picture </button></center>
-<center><button id="show"> Show Picture </button></center>
+<p>Welcome to my homepage! Click on the buttons above to see more about me, my skills, and my information.</p>
+</p>
 <br>
 <div id="page1" style="display:none;">
-<h3> About Me </h3>
-
-<p> Welcome to my homepage. On this page you will find information about my coursework and
-skills. Currently, I am in my last semester at Point Park University majoring in Information Technology and
+<h3 style="margin-left:18.5em"> About Me </h3>
+<p><center><img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAdyAAAAJDUxZmNkZmU2LTA1YmEtNGUxNS1hNDEzLTE3YTFkMDhhOWFkMA.jpg" style="float:left"></center>
+<p> Currently, I am in my last semester at Point Park University majoring in Information Technology and
 minoring in Business Management. I have also been a varsity women's basketball player here at point
 park for the past 4 years. My hobbies are cooking, running, and hiking.
 </p>
@@ -108,12 +97,12 @@ and Databases. All of these courses have given me a background into the world of
 </div>
 <br>
 <div id="page3" class="font" style="display:none;">
-  <h3> Resume </h3>
+<h3> Resume </h3>
 
 </div>
 
 <div id="page4" style="display:none;" class="font">
-  <h3> Contact Information </h3>
+<h3> Contact Information </h3>
 I can be contacted at cmdipie@gmail.com for a copy of my resume or if you have any questions. Also,
 here is an article that I was featured in for being the first student to do a co-op
 at Point Park University.
