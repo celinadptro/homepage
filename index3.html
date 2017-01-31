@@ -24,6 +24,10 @@ $(function() {
         height: 'toggle'
     });
   });
+    $(".change").click( function() {
+    $("h2").css("color", "black");
+    $("h2").css("color", "#FFB563");
+    });
 });
 
 function showpage(page) {
@@ -55,7 +59,7 @@ function showpage(page) {
 <ul>
   <li><a href="javascript:void(0)" onclick="showpage(1)">About Me</a></li>
   <li><a href="javascript:void(0)" onclick="showpage(2)">Courses</a></li>
-  <li><a href="javascript:void(0)" onclick="showpage(3)">Resume</a></li>
+  <li><a href="javascript:void(0)" onclick="showpage(3)">Awards</a></li>
   <li><a href="javascript:void(0)" onclick="showpage(4)">Contact</a></li>
 </ul>
 </div>
@@ -85,7 +89,7 @@ park for the past 4 years. My hobbies are cooking, running, and hiking.
 <br>
 My main focus is analytics. I love working with data and finding new and important information from it.
 </div>
-<p><button> Start Animation </button></p>
+<p> <button> Start Animation </button> </p>
 <br>
 </div>
 
@@ -104,7 +108,18 @@ and Databases. All of these courses have given me a background into each topic.
 </div>
 
 <div id="page3" class="font" style="display:none;">
-<h3> Resume </h3>
+<h3> Awards </h3>
+Here are a list of awards that I have recieved at Point Park:
+<ul>
+<li> Departmental Scholarship </li>
+<li> Founders Awards </li>
+<li> Women's Basketball Scholarship </li>
+<li> The Haberle Scholarship Fund </li>
+<li> Chi Alpha Sigma Honors Society </li>
+</ul>
+<br>
+I was also the first Co-op Student at Point Park and will be one of the first
+students to graduate from the new and improved IT department.
 </div>
 
 <div id="page4" style="display:none;" class="font">
@@ -113,6 +128,7 @@ I can be contacted at cmdipie@gmail.com for a copy of my resume or if you have a
 here is an article that I was featured in for being the first student to do a co-op
 at Point Park University.
 <br>
+<button class="change" style="vertical-align:middle"><span> New Color? </span></button>
 <br>
 Link: <a href="http://www.pointpark.edu/news-business/pointparkworks-meet-celina-dipietro-it-major-and-co-op-employee-for-data-analytics-company"> Meet Celina DiPietro, IT major and CO-OP employee for data analytics company </a>
 </div>
